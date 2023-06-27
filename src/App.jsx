@@ -3,8 +3,9 @@ import { styled, createGlobalStyle } from "styled-components";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 
-import raleway300 from "./assets/fonts/Raleway-Light.ttf";
-import montserrat700 from "./assets/fonts/MontserratAlternates-Bold.ttf";
+import raleway300 from "./assets/fonts/Raleway300.ttf";
+import montserrat700 from "./assets/fonts/MontserratAlternates700.ttf";
+import montserrat500 from "./assets/fonts/MontserratAlternates500.ttf";
 import junegull from "./assets/fonts/junegull.otf";
 
 function App() {
@@ -17,7 +18,16 @@ function App() {
   );
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  background: linear-gradient(89deg, #ee9ca7 0%, rgba(255, 221, 225, 0) 100%);
+`;
+
+export const Container = styled.div`
+  max-width: 1210px;
+  padding: 0 15px;
+  margin: 0 auto;
+  width: 100%;
+`;
 
 export const GlobalStyle = createGlobalStyle`
 * {
@@ -34,6 +44,11 @@ export const GlobalStyle = createGlobalStyle`
 @font-face {
   font-family: 'Montserrat700';
   src: url(${montserrat700});
+}
+
+@font-face {
+  font-family: 'Montserrat500';
+  src: url(${montserrat500});
 }
 
 @font-face {

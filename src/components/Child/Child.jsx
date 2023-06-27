@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { GlobalStyle } from "../../App";
 import image from "../../assets/img/image114.png";
+import { Container } from "../../App";
 
 function Child() {
   const data = {
@@ -27,7 +27,6 @@ function Child() {
   return (
     <section className="child">
       <Container>
-        <GlobalStyle />
         {/* == */}
 
         <Content>
@@ -55,17 +54,12 @@ function Child() {
   );
 }
 
-const Container = styled.div`
-  max-width: 1210px;
-  padding: 0 15px;
-  margin: 0 auto;
-`;
-
-const Content = styled.div`
+export const Content = styled.div`
   width: 100%;
+  padding-bottom: 150px;
 `;
 
-const Title = styled.h2`
+export const Title = styled.h2`
   color: #e75c6b;
   font-size: 36px;
   font-family: Junegull;
@@ -117,9 +111,9 @@ const CardRight = styled.div`
   width: 100%;
 `;
 
-const Description = styled.div``;
+export const Description = styled.div``;
 
-const CardTitle = styled.h4`
+export const CardTitle = styled.h4`
   color: #e9657e;
   font-size: 22px;
   font-family: Montserrat Alternates;
@@ -133,7 +127,7 @@ const CardTitle = styled.h4`
   }
 `;
 
-const CardDesc = styled.p`
+export const CardDesc = styled.p`
   color: var(--black, #464646);
   font-size: 20px;
   font-weight: 300;
