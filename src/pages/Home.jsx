@@ -1,11 +1,16 @@
-import React from 'react'
+import React from "react";
+
+import Child from "../components/Child/Child";
 
 function Home() {
   return (
-    <header>
-        
-    </header>
-  )
+    <div>
+      <header></header>
+      <main>
+        <Child />
+      </main>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
