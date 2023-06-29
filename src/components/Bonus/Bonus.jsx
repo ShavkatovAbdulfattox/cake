@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { Container } from "../../App";
 import cake from "../../assets/img/Bonus/cake.png";
 import phone from "../../assets/img/Bonus/phone.png";
 import bigImg from "../../assets/img/Bonus/bigImg.png";
@@ -9,7 +8,7 @@ import WhatsAppBtn from "../Btns/WhatsAppBtn";
 function Bonus() {
   return (
     <section className="bonus">
-      <Container>
+      <div className="container">
         <Title>Не нашли нужный торт? отправьте нам</Title>
         <Content>
           <Left>
@@ -35,7 +34,7 @@ function Bonus() {
             <Big src={bigImg} alt="big" />
           </Right>
         </Content>
-      </Container>
+      </div>
     </section>
   );
 }
@@ -53,7 +52,6 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.div`
-  width: 1180px;
   height: 465px;
   flex-shrink: 0;
   display: flex;

@@ -53,7 +53,6 @@ const Card = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid black;
   overflow: hidden;
 
   @media screen and (max-width: 520px) {

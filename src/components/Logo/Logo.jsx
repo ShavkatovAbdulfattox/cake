@@ -1,5 +1,5 @@
 import React from 'react';
-import LOGO1 from "../../assets/img/navbar/LOGO.png"
+import LOGO1 from "../../assets/img/navbar/LOGO3.png"
 
 function Logo() {
   return <div className="flex items-center relative gap-5">

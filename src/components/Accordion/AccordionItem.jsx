@@ -22,7 +22,7 @@ function AccordionItem(props) {
     <Item>
       <Top onClick={handleStatusChange}>
         <Title>{props.title}</Title>
-        <Icon src={icon} draggable="false" />
+        <Icon src={icon} draggable="false" className="shadow-button shadow-red-300 rounded-full" />
       </Top>
       <Bottom ref={AccordionData} open={dataStatus}>
         <BottomContent>{props.children}</BottomContent>

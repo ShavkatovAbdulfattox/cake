@@ -4,11 +4,13 @@ import Logo from "../Logo/Logo";
 import LOGO_BG from "../../assets/img/navbar/LOGO_BG.png";
 import WhatsAppBtn from "../Btns/WhatsAppBtn";
 import { RiShoppingBasketLine } from "react-icons/ri";
+import { BiChevronDown } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 function Navbar() {
   return (
-    <div className="container mb-8 pt-8">
-      <Banner className="relative isolate flex justify-between items-center">
+    <div className="mb-8 pt-8">
+      <Banner className="container relative isolate ">
         <Logo />
         <div className="flex flex-col gap-7">
           <div className="flex text-xl gap-8 ">
@@ -119,9 +121,12 @@ function Navbar() {
             </div>
             <WhatsAppBtn />
             <WhatsAppBtn text="Заказать звонок" />
-            <div className="shadow-button shadow-red-400 bg-gradient-to-l from-red-500 to-red-200 rounded-full p-3">
+            <motion.div
+              whileTap={{ scale: 0.8 }}
+              className="cursor-pointer shadow-button shadow-red-400 bg-gradient-to-l from-red-500 to-red-200 rounded-full p-3"
+            >
               <RiShoppingBasketLine className="fill-white text-2xl" />
-            </div>
+            </motion.div>
           </div>
         </div>
         <img
@@ -130,11 +135,63 @@ function Navbar() {
           className="absolute -top-10 -left-48 -z-10"
         />
       </Banner>
-      <nav></nav>
+      <Nav className="z-20 mt-12 shadow-sm">
+        <div className="container flex justify-between py-5 text-textColor">
+          <Select>
+            <a href="#!" className="text-lg font-Montserrat500">
+              Каталог
+            </a>
+            <BiChevronDown className="text-lg"/>
+
+          </Select>
+          <a href="#!" className="text-lg font-Montserrat500">
+            Начинки
+          </a>
+          <a href="#!" className="text-lg font-Montserrat500">
+            Как сделать заказ
+          </a>
+          <a href="#!" className="text-lg font-Montserrat500">
+            Доставка
+          </a>
+          <Select>
+            <a href="#!" className="text-lg font-Montserrat500">
+            О компании
+            </a>
+            <BiChevronDown className="text-lg"/>
+          </Select>
+          <a href="#!" className="text-lg font-Montserrat500">
+            FAQ
+          </a>
+          <a href="#!" className="text-lg font-Montserrat500">
+            Акции
+          </a>
+          <a href="#!" className="text-lg font-Montserrat500">
+            Контакты
+          </a>
+        </div>
+      </Nav>
     </div>
   );
 }
 
-const Banner = styled.div``;
+const Banner = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const Nav = styled.nav`
+  background: linear-gradient(180deg, #fff 0%, rgba(255, 255, 255, 0) );
+
+  & a{
+    cursor: pointer;
+  }
+
+`;
+const Select = styled.div`
+display: flex;
+align-items: center;
+gap: 7px;
+`;
 
 export default Navbar;

@@ -75,7 +75,6 @@ const Card = styled.div`
   column-gap: 70px;
   align-items: center;
   border-radius: 15px;
-  border: 1px solid black;
   padding: 56px 90px 69px 50px;
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
 
