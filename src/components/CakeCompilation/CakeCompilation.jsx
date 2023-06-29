@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container } from "../../App";
+// import { div  } from "../../App";
 
 import WhatsAppBtn from "../Btns/WhatsAppBtn";
 import { Content, Title, Description, CardTitle, CardDesc } from "../Child/Child";
@@ -20,7 +20,7 @@ function CakeCompilation() {
 
   return (
     <section>
-      <Container>
+      <div className="container">
         <Content>
           <Title>{data.title}</Title>
           <Card>
@@ -42,7 +42,7 @@ function CakeCompilation() {
             </CardRight>
           </Card>
         </Content>
-      </Container>
+      </div>
     </section>
   );
 }

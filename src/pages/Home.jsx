@@ -6,11 +6,8 @@ import CakeCompilation from "../components/CakeCompilation/CakeCompilation";
 function Home() {
   return (
     <div>
-      <header></header>
-      <main>
-        <Child />
-        <CakeCompilation />
-      </main>
+      <Child />
+      <CakeCompilation />
     </div>
   );
 }
