@@ -1,9 +1,11 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
+import raleway700 from "../../assets/fonts/Raleway700.ttf";
 import raleway300 from "../../assets/fonts/Raleway300.ttf";
 import montserrat700 from "../../assets/fonts/MontserratAlternates700.ttf";
 import montserrat500 from "../../assets/fonts/MontserratAlternates500.ttf";
+import montserrat400 from "../../assets/fonts/MontserratAlternates400.ttf";
 import junegull from "../../assets/fonts/junegull.otf";
 
 function GlobalStyles() {
@@ -91,6 +93,10 @@ scroll-behavior: smooth;
 background-color: rgb(229, 231, 235);
 }
 
+@font-face {
+  font-family: 'Raleway700';
+  src: url(${raleway700});
+}
 
 @font-face {
   font-family: 'Raleway300';
@@ -105,6 +111,11 @@ background-color: rgb(229, 231, 235);
 @font-face {
   font-family: 'Montserrat500';
   src: url(${montserrat500});
+}
+
+@font-face {
+  font-family: 'Montserrat400';
+  src: url(${montserrat400});
 }
 
 @font-face {

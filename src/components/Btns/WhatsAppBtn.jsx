@@ -41,7 +41,7 @@ const Link = styled.a`
 const Title = styled.p`
   color: ${(props) => props.text ? 'white' : 'black'};
   font-size: 16px;
-  font-family: Montserrat500;
+  font-family: "Montserrat500";
   white-space: nowrap;
 `;
 
