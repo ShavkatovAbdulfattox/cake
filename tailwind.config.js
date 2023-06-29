@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     container: {
       center: true,
@@ -63,6 +60,16 @@ module.exports = {
         cartItem: "#2e3033",
         cartTotal: "#343739",
       },
+      fontFamily: {
+        'Montserrat700': ['"Montserrat700"', 'serif'],
+        'Raleway300': ['"Raleway300"', 'serif'],
+        'Montserrat500': ['"Montserrat500"', 'serif'],
+        'Junegull': ['"Junegull"', 'serif'],
+      },
+      boxShadow: {
+        'button': '0px 4px 30px 0px',
+      },
+
       plugins: [],
     },
   },
