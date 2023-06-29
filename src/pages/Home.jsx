@@ -7,12 +7,9 @@ import Accordion from "../components/Accordion/Accordion";
 function Home() {
   return (
     <div>
-      <header></header>
-      <main>
-        <Child />
-        <CakeCompilation />
-        <Accordion />
-      </main>
+      <Child />
+      <CakeCompilation />
+      <Accordion />
     </div>
   );
 }

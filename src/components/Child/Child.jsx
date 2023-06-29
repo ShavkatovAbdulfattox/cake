@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import image from "../../assets/img/image114.png";
-import { Container } from "../../App";
 
 function Child() {
   const data = {
@@ -26,7 +25,7 @@ function Child() {
 
   return (
     <section className="child">
-      <Container>
+      <div className="container">
         {/* == */}
 
         <Content>
@@ -49,7 +48,7 @@ function Child() {
         </Content>
 
         {/* == */}
-      </Container>
+      </div>
     </section>
   );
 }
@@ -57,8 +56,9 @@ function Child() {
 export const Content = styled.div`
   width: 100%;
   padding-bottom: 150px;
-`;
 
+`;
+  
 export const Title = styled.h2`
   color: #e75c6b;
   font-size: 36px;

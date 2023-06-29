@@ -2,8 +2,6 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 
-import { Container } from "../../App";
-
 import AccordionItem from "./AccordionItem";
 
 function Accordion() {
@@ -199,7 +197,7 @@ function Accordion() {
 
   return (
     <AccordionWrapper>
-      <Container>
+      <div className="container">
         <Title>{data.title}</Title>
         <Accordions>
           {items.map((item, index) => (
@@ -213,7 +211,7 @@ function Accordion() {
             </AccordionItem>
           ))}
         </Accordions>
-      </Container>
+      </div>
     </AccordionWrapper>
   );
 }

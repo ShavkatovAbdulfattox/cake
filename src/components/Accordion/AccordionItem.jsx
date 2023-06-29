@@ -22,9 +22,7 @@ function AccordionItem(props) {
     <Item>
       <Top onClick={handleStatusChange}>
         <Title>{props.title}</Title>
-        <Button>
-          <ButtonImage src={icon} />
-        </Button>
+        <Icon src={icon} draggable="false" />
       </Top>
       <Bottom ref={AccordionData} open={dataStatus}>
         <BottomContent>{props.children}</BottomContent>
@@ -35,7 +33,6 @@ function AccordionItem(props) {
 
 const Item = styled.div`
   width: 100%;
-  margin-bottom: 10px;
 `;
 
 const Top = styled.div`
@@ -47,6 +44,15 @@ const Top = styled.div`
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   margin-bottom: 10px;
   cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 30px 0 40px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0 20px 0 25px;
+    margin-bottom: 5px;
+  }
 `;
 
 const Title = styled.h5`
@@ -58,35 +64,41 @@ const Title = styled.h5`
   line-height: normal;
   letter-spacing: 0.66px;
   padding: 22px 0;
+
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    line-height: 105%;
+    letter-spacing: 0.45px;
+  }
 `;
 
-const Button = styled.button`
-  border: none;
-  background: none;
-  position: relative;
+const Icon = styled.img`
   height: 35px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  overflow: hidden;
-`;
+  width: 35px;
+  margin-left: 10px;
 
-const ButtonImage = styled.img`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
+  @media screen and (max-width: 768px) {
+    height: 25px;
+    width: 25px;
+  }
 `;
 
 const Bottom = styled.div`
   border-radius: 25px;
   background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   overflow: hidden;
-  max-height: ${(props) => (props.open ? Bottom.clientHeight + "px" : "0")};
+  display: ${(props) => (props.open ? "block" : "none")};
   transition: 1s;
   transform-origin: top;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10px;
+  }
 `;
 
 const BottomContent = styled.div`
