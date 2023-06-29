@@ -4,8 +4,10 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 
 import raleway300 from "./assets/fonts/Raleway300.ttf";
-import montserrat700 from "./assets/fonts/MontserratAlternates700.ttf";
+import raleway700 from "./assets/fonts/Raleway700.ttf";
+import montserrat400 from "./assets/fonts/MontserratAlternates400.ttf";
 import montserrat500 from "./assets/fonts/MontserratAlternates500.ttf";
+import montserrat700 from "./assets/fonts/MontserratAlternates700.ttf";
 import junegull from "./assets/fonts/junegull.otf";
 
 function App() {
@@ -52,8 +54,18 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 @font-face {
+  font-family: 'Montserrat400';
+  src: url(${montserrat400});
+}
+
+@font-face {
   font-family: 'Junegull';
   src: url(${junegull});
+}
+
+@font-face {
+  font-family: 'Raleway700';
+  src: url(${raleway700});
 }
 `;
 

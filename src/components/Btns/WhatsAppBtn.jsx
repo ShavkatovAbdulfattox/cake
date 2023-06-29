@@ -40,7 +40,7 @@ const Link = styled.a`
 const Title = styled.p`
   color: var(--black, #464646);
   font-size: 16px;
-  font-family: Montserrat500;
+  font-family: "Montserrat500";
   white-space: nowrap;
 `;
 

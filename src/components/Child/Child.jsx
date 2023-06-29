@@ -116,7 +116,7 @@ export const Description = styled.div``;
 export const CardTitle = styled.h4`
   color: #e9657e;
   font-size: 22px;
-  font-family: Montserrat Alternates;
+  font-family: "Montserrat500";
   font-weight: 700;
   letter-spacing: 0.66px;
   font-family: "Montserrat700";

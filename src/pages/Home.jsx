@@ -2,6 +2,7 @@ import React from "react";
 
 import Child from "../components/Child/Child";
 import CakeCompilation from "../components/CakeCompilation/CakeCompilation";
+import Accordion from "../components/Accordion/Accordion";
 
 function Home() {
   return (
@@ -10,6 +11,7 @@ function Home() {
       <main>
         <Child />
         <CakeCompilation />
+        <Accordion />
       </main>
     </div>
   );
