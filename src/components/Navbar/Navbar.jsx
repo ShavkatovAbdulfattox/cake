@@ -7,15 +7,10 @@ import { RiShoppingBasketLine } from "react-icons/ri";
 import { BiChevronDown } from "react-icons/bi";
 import { motion } from "framer-motion";
 
-function Navbar() {
+function Navbar() { 
   return (
-<<<<<<< HEAD
-    <div className="mb-8 pt-8">
-      <Banner className="container relative isolate ">
-=======
-    <div className="container mb-8 pt-8 px-[100px]">
-      <Banner className="relative isolate flex justify-between items-center">
->>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
+    <div className=" mb-8 pt-8 ">
+      <Banner className="container relative isolate flex justify-between items-center ">
         <Logo />
         <div className="flex flex-col gap-7">
           <div className="flex text-xl gap-8 ">
@@ -137,13 +132,13 @@ function Navbar() {
         <img
           src={LOGO_BG}
           alt="logo_backround"
-          className="absolute -top-10 -left-48 -z-10"
+          className="absolute -top-10 -left-48 -z-30"
         />
       </Banner>
-      <Nav className="z-20 mt-12 shadow-sm">
+      <Nav className="z-50 mt-12 shadow-sm">
         <div className="container flex justify-between py-5 text-textColor">
           <Select>
-            <a href="#!" className="text-lg font-Montserrat500">
+            <a href="#!" className="text-lg font-Montserrat500 z-20">
               Каталог
             </a>
             <BiChevronDown className="text-lg"/>
@@ -190,6 +185,7 @@ const Nav = styled.nav`
 
   & a{
     cursor: pointer;
+    z-index: 20;
   }
 
 `;

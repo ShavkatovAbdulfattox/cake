@@ -7,43 +7,37 @@ import WhatsAppBtn from "../Btns/WhatsAppBtn";
 
 function Bonus() {
   return (
-<<<<<<< HEAD
     <section className="bonus">
-=======
-    <Section className="bonus">
->>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
-      <div className="container">
-        <Title>Не нашли нужный торт? отправьте нам</Title>
-        <Content>
-          <Left>
-            <Desc className="oddit font-Raleway300">
-              Отправьте любую фотографию торта <br /> из интернета нам в
-              WhatsApp – мы его <br /> испечем, а вы получите дополнительную
-              <span style={{ color: "#000", fontWeight: "600" }}>
-                {" "}
-                скидку 5%
-              </span>
-            </Desc>
-            <Discount>
-              <Image src={cake} alt="cake" />
-              <Span>+</Span>
-              <Image src={phone} alt="phone" />
-              <Span>=</Span>
-              <Pct>5%</Pct>
-              <Arrow src={arrow} alt="arrow" />
-            </Discount>
-            <WhatsAppBtn />
-          </Left>
-          <Right>
-            <Big src={bigImg} alt="big" />
-          </Right>
-        </Content>
-      </div>
-<<<<<<< HEAD
+      <Section className="bonus">
+        <div className="container">
+          <Title>Не нашли нужный торт? отправьте нам</Title>
+          <Content>
+            <Left>
+              <Desc className="oddit font-Raleway300">
+                Отправьте любую фотографию торта <br /> из интернета нам в
+                WhatsApp – мы его <br /> испечем, а вы получите дополнительную
+                <span style={{ color: "#000", fontWeight: "600" }}>
+                  {" "}
+                  скидку 5%
+                </span>
+              </Desc>
+              <Discount>
+                <Image src={cake} alt="cake" />
+                <Span>+</Span>
+                <Image src={phone} alt="phone" />
+                <Span>=</Span>
+                <Pct>5%</Pct>
+                <Arrow src={arrow} alt="arrow" />
+              </Discount>
+              <WhatsAppBtn />
+            </Left>
+            <Right>
+              <Big src={bigImg} alt="big" />
+            </Right>
+          </Content>
+        </div>
+      </Section>
     </section>
-=======
-    </Section>
->>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
   );
 }
 
@@ -66,10 +60,7 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.div`
-<<<<<<< HEAD
-=======
   width: 100%;
->>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
   height: 465px;
   flex-shrink: 0;
   display: flex;

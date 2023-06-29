@@ -81,7 +81,7 @@ function Header() {
         </SwiperSlide>
         <SwiperSlide>
           {" "}
-          <Content className="relative flex-shrink-0 border-dashed border-white border-[3px] rounded-[60px] py-14 pb-32 px-6 flex items-start justify-between ">
+          <Content className="relative flex-shrink-0 border-dashed border-white border-[3px] rounded-[60px] py-10 px-6 flex items-start justify-between pb-">
             <div className="max-w-3xl flex flex-col justify-start ">
               <h1 className="font-Boorsok text-white text-4xl">
                 Хотите получить дополнительную скидку 5% к вашему заказу?
