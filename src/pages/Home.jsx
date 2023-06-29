@@ -8,8 +8,12 @@ import Header from "../components/Header/Header";
 
 function Home() {
   return (
+<<<<<<< HEAD
     <div>
       <Header />
+=======
+    <div className='all'>
+>>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
       <Bonus />
       <Child />
       <CakeCompilation />

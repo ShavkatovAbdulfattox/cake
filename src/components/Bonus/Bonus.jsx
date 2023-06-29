@@ -7,12 +7,16 @@ import WhatsAppBtn from "../Btns/WhatsAppBtn";
 
 function Bonus() {
   return (
+<<<<<<< HEAD
     <section className="bonus">
+=======
+    <Section className="bonus">
+>>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
       <div className="container">
         <Title>Не нашли нужный торт? отправьте нам</Title>
         <Content>
           <Left>
-            <Desc>
+            <Desc className="oddit font-Raleway300">
               Отправьте любую фотографию торта <br /> из интернета нам в
               WhatsApp – мы его <br /> испечем, а вы получите дополнительную
               <span style={{ color: "#000", fontWeight: "600" }}>
@@ -35,9 +39,19 @@ function Bonus() {
           </Right>
         </Content>
       </div>
+<<<<<<< HEAD
     </section>
+=======
+    </Section>
+>>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
   );
 }
+
+export const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Title = styled.h2`
   padding-top: 100px;
@@ -52,6 +66,10 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.div`
+<<<<<<< HEAD
+=======
+  width: 100%;
+>>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
   height: 465px;
   flex-shrink: 0;
   display: flex;
@@ -61,6 +79,12 @@ export const Content = styled.div`
   border-radius: 12px;
   padding: 40px;
   margin-bottom: 150px;
+
+  @media screen and (max-width: 768px) {
+    width: 749px;
+    height: 340px;
+    padding: 20px;
+  }
 `;
 
 export const Left = styled.div`
@@ -70,6 +94,9 @@ export const Left = styled.div`
   height: 100%;
   align-items: start;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+  }
 `;
 
 export const Desc = styled.p`
@@ -88,9 +115,16 @@ export const Discount = styled.div`
   align-items: center;
   justify-content: start;
   gap: 30px;
+  @media screen and (max-width: 768px) {
+    gap: 17px;
+  }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    width: 50px;
+  }
+`;
 
 export const Span = styled.span`
   color: #e9657e;
@@ -99,6 +133,9 @@ export const Span = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 export const Pct = styled.h4`
@@ -108,12 +145,18 @@ export const Pct = styled.h4`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 61px;
+  }
 `;
 
 export const Arrow = styled.img`
   position: absolute;
   top: 167px;
   right: 130px;
+  @media screen and (max-width: 768px) {
+    top: 100px;
+  }
 `;
 
 export const Right = styled.div`
@@ -124,6 +167,10 @@ export const Right = styled.div`
 export const Big = styled.img`
   position: absolute;
   bottom: -233px;
+  left: calc(30% + 10%);
+  @media screen and (max-width: 768px) {
+    width: 237px;
+  }
 `;
 
 export default Bonus;

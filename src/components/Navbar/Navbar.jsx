@@ -9,8 +9,13 @@ import { motion } from "framer-motion";
 
 function Navbar() {
   return (
+<<<<<<< HEAD
     <div className="mb-8 pt-8">
       <Banner className="container relative isolate ">
+=======
+    <div className="container mb-8 pt-8 px-[100px]">
+      <Banner className="relative isolate flex justify-between items-center">
+>>>>>>> 9e75e17e19ddc98905499e44b92d4b1a8ddfbc51
         <Logo />
         <div className="flex flex-col gap-7">
           <div className="flex text-xl gap-8 ">
