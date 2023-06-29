@@ -1,5 +1,4 @@
 import { styled } from "styled-components";
-import { Container } from "../../App";
 import cake from "../../assets/img/Bonus/cake.png";
 import phone from "../../assets/img/Bonus/phone.png";
 import bigImg from "../../assets/img/Bonus/bigImg.png";
@@ -8,12 +7,12 @@ import WhatsAppBtn from "../Btns/WhatsAppBtn";
 
 function Bonus() {
   return (
-    <section className="bonus">
-      <Container>
+    <Section className="bonus">
+      <div className="container">
         <Title>Не нашли нужный торт? отправьте нам</Title>
         <Content>
           <Left>
-            <Desc>
+            <Desc className="oddit font-Raleway300">
               Отправьте любую фотографию торта <br /> из интернета нам в
               WhatsApp – мы его <br /> испечем, а вы получите дополнительную
               <span style={{ color: "#000", fontWeight: "600" }}>
@@ -35,10 +34,16 @@ function Bonus() {
             <Big src={bigImg} alt="big" />
           </Right>
         </Content>
-      </Container>
-    </section>
+      </div>
+    </Section>
   );
 }
+
+export const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Title = styled.h2`
   padding-top: 100px;
@@ -53,7 +58,7 @@ export const Title = styled.h2`
 `;
 
 export const Content = styled.div`
-  width: 1180px;
+  width: 100%;
   height: 465px;
   flex-shrink: 0;
   display: flex;
@@ -63,6 +68,12 @@ export const Content = styled.div`
   border-radius: 12px;
   padding: 40px;
   margin-bottom: 150px;
+
+  @media screen and (max-width: 768px) {
+    width: 749px;
+    height: 340px;
+    padding: 20px;
+  }
 `;
 
 export const Left = styled.div`
@@ -72,6 +83,9 @@ export const Left = styled.div`
   height: 100%;
   align-items: start;
   justify-content: space-between;
+  @media screen and (max-width: 768px) {
+    gap: 20px;
+  }
 `;
 
 export const Desc = styled.p`
@@ -90,9 +104,16 @@ export const Discount = styled.div`
   align-items: center;
   justify-content: start;
   gap: 30px;
+  @media screen and (max-width: 768px) {
+    gap: 17px;
+  }
 `;
 
-export const Image = styled.img``;
+export const Image = styled.img`
+  @media screen and (max-width: 768px) {
+    width: 50px;
+  }
+`;
 
 export const Span = styled.span`
   color: #e9657e;
@@ -101,6 +122,9 @@ export const Span = styled.span`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
 `;
 
 export const Pct = styled.h4`
@@ -110,12 +134,18 @@ export const Pct = styled.h4`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  @media screen and (max-width: 768px) {
+    font-size: 61px;
+  }
 `;
 
 export const Arrow = styled.img`
   position: absolute;
   top: 167px;
   right: 130px;
+  @media screen and (max-width: 768px) {
+    top: 100px;
+  }
 `;
 
 export const Right = styled.div`
@@ -126,6 +156,10 @@ export const Right = styled.div`
 export const Big = styled.img`
   position: absolute;
   bottom: -233px;
+  left: calc(30% + 10%);
+  @media screen and (max-width: 768px) {
+    width: 237px;
+  }
 `;
 
 export default Bonus;

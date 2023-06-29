@@ -7,7 +7,7 @@ import Bonus from "../components/Bonus";
 
 function Home() {
   return (
-    <div>
+    <div className='all'>
       <Bonus />
       <Child />
       <CakeCompilation />
