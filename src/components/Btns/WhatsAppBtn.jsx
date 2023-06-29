@@ -22,7 +22,7 @@ const Button = styled.div`
   cursor: pointer;
   padding: ${(props) => props.text ? '5px' : '0'} ;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 570px) {
     width: 100%;
   }
 `;

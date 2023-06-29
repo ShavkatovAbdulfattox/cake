@@ -5,3 +5,9 @@
 .all{
     padding: 0 100px;
 }
+
+@media screen and (max-width: 768px) {
+  .all, .navbar{
+    padding: 0;
+  }
+}

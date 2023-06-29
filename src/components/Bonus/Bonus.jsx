@@ -28,7 +28,7 @@ function Bonus() {
               <Pct>5%</Pct>
               <Arrow src={arrow} alt="arrow" />
             </Discount>
-            <WhatsAppBtn />
+            <WhatsAppBtn className='w-full' />
           </Left>
           <Right>
             <Big src={bigImg} alt="big" />
@@ -70,7 +70,6 @@ export const Content = styled.div`
   margin-bottom: 150px;
 
   @media screen and (max-width: 768px) {
-    width: 749px;
     height: 340px;
     padding: 20px;
   }
@@ -85,6 +84,9 @@ export const Left = styled.div`
   justify-content: space-between;
   @media screen and (max-width: 768px) {
     gap: 20px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 100%;
   }
 `;
 
@@ -107,11 +109,17 @@ export const Discount = styled.div`
   @media screen and (max-width: 768px) {
     gap: 17px;
   }
+  @media screen and (max-width: 570px) {
+    justify-content: space-between;
+  }
 `;
 
 export const Image = styled.img`
   @media screen and (max-width: 768px) {
     width: 50px;
+  }
+  @media screen and (max-width: 570px) {
+    width: 70px;
   }
 `;
 
@@ -124,6 +132,9 @@ export const Span = styled.span`
   line-height: normal;
   @media screen and (max-width: 768px) {
     font-size: 13px;
+  }
+  @media screen and (max-width: 570px) {
+    font-size: 24px;
   }
 `;
 
@@ -146,11 +157,17 @@ export const Arrow = styled.img`
   @media screen and (max-width: 768px) {
     top: 100px;
   }
+  @media screen and (max-width: 570px) {
+    display: none;
+  }
 `;
 
 export const Right = styled.div`
   width: 400px;
   position: relative;
+  @media screen and (max-width: 570px) {
+    display: none;
+  }
 `;
 
 export const Big = styled.img`
@@ -159,6 +176,8 @@ export const Big = styled.img`
   left: calc(30% + 10%);
   @media screen and (max-width: 768px) {
     width: 237px;
+    bottom: -170px;
+    left: calc(25% + 10%);
   }
 `;
 

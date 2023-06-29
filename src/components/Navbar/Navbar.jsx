@@ -7,7 +7,7 @@ import { RiShoppingBasketLine } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <div className="container mb-8 pt-8 px-[100px]">
+    <div className="navbar container mb-8 pt-8 px-[100px]">
       <Banner className="relative isolate flex justify-between items-center">
         <Logo />
         <div className="flex flex-col gap-7">
