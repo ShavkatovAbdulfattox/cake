@@ -151,9 +151,9 @@ function Header() {
               width="87"
               height="87"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -187,8 +187,8 @@ function Header() {
               y2="16.0091"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#E75C6B" />
-              <stop offset="1" stop-color="#EB8794" />
+              <stop stopColor="#E75C6B" />
+              <stop offset="1" stopColor="#EB8794" />
             </linearGradient>
           </defs>
         </svg>
@@ -221,9 +221,9 @@ function Header() {
               width="87"
               height="87"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -257,8 +257,8 @@ function Header() {
               y2="38.0091"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#E75C6B" />
-              <stop offset="1" stop-color="#EB8794" />
+              <stop stopColor="#E75C6B" />
+              <stop offset="1" stopColor="#EB8794" />
             </linearGradient>
           </defs>
         </svg>

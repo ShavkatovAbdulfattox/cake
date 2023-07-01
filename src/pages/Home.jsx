@@ -8,7 +8,7 @@ import Header from "../components/Header/Header";
 
 function Home() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <Bonus />
       <Child />
