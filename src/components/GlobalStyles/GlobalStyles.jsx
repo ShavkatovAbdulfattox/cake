@@ -7,6 +7,7 @@ import montserrat700 from "../../assets/fonts/MontserratAlternates700.ttf";
 import montserrat500 from "../../assets/fonts/MontserratAlternates500.ttf";
 import montserrat400 from "../../assets/fonts/MontserratAlternates400.ttf";
 import junegull from "../../assets/fonts/junegull.otf";
+import boorsok from "../../assets/fonts/boorsok.otf";
 
 function GlobalStyles() {
   return <GlobalStyle />;
@@ -121,6 +122,9 @@ background-color: rgb(229, 231, 235);
 @font-face {
   font-family: 'Junegull';
   src: url(${junegull});
+}@font-face {
+  font-family: 'Boorsok';
+  src: url(${boorsok});
 }
 `;
 
