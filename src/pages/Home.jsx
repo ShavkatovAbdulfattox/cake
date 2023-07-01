@@ -7,11 +7,16 @@ import Bonus from "../components/Bonus";
 import Header from "../components/Header/Header";
 import Order from "../components/Order/Order";
 import Contact from "../components/Contact/Contact";
-
+import { styled } from "styled-components";
+import Bantik from "../assets/img/bantik.png"
 function Home() {
   return (
     <div className="overflow-hidden ">
       <Header />
+      <Banner className="text-2xl font-Montserrat700 text-pink my-20 py-7 text-center relative">
+       В цену каждого торта включено: любая начинка, упаковка и поздравительная надпись
+       <img src={Bantik} alt="bantik" className="absolute -top-20" />
+      </Banner>
       <main>
         <Bonus />
         <Child />
@@ -23,5 +28,10 @@ function Home() {
     </div>
   );
 }
+
+const Banner = styled.div`
+background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00));
+`
+
 
 export default Home;
