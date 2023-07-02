@@ -39,10 +39,13 @@ const Link = styled.a`
   justify-content: center;
   align-items: center;
   column-gap: 10px;
-  padding: 13px 32px;
+  padding: 5px 20px;
   height: 100%;
   width: 100%;
   text-decoration: none;
+  @media screen and (min-width: 1024px) {
+  padding: 13px 32px;
+  }
 `;
 
 const Title = styled.p`
