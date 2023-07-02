@@ -29,7 +29,7 @@ function Child() {
         {/* == */}
 
         <Content>
-          <Title>{data.title}</Title>
+          <Title className="mb-5">{data.title}</Title>
           <Card>
             <CardLeft>
               <Image src={image}></Image>
@@ -67,6 +67,12 @@ export const Title = styled.h2`
   font-family: "Junegull";
   margin-bottom: 50px;
   text-transform: uppercase;
+  @media screen and (max-width: 550px) {
+    margin-bottom: 20px;
+    font-size: 25px;
+
+  }
+
 `;
 
 const Card = styled.div`
