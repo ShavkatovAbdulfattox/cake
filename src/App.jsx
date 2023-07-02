@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 
 function App() {
   return (
-    <Wrapper>
+    <Wrapper className="lg:px-0 px-4">
       <Navbar />
       <Home />
     </Wrapper>
