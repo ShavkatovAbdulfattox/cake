@@ -5,9 +5,9 @@ import {motion} from "framer-motion"
 
 export default function WhatsAppBtn(props) {
   return (
-    <motion.div whileTap={{scale:.9}} className="z-10">
+    <motion.div whileTap={{scale:.9}} className="z-10 w-full">
       {" "}
-      <Button text={props.text} style={props.style}>
+      <Button text={props.text} style={props.style} className="w-full">
         <Link href="#">
           <Title text={props.text}>
             {props.text ? props.text : "Написать в"}

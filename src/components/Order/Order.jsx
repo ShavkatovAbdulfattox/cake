@@ -9,19 +9,19 @@ import Telegram from "../../assets/img/navbar/telegram.png"
 
 function Order() {
   return (
-    <Wrapper className="container mt-36 ">
+    <Wrapper className="lg:container mt-36 ">
       <Title>Закажите торт в 1 клик!</Title>
 
-      <Content className="rounded-3xl px-10 py-10  flex justify-between items-center">
-        <div className="">
-          <h2 className="text-2xl font-Montserrat700 text-pink">
+      <Content className="rounded-3xl lg:px-10 px-5 pt-10 flex justify-between lg:items-center  md:items-end items-center">
+        <div className="lg:flex-shrink-0 lg:w-auto mb-3 ">
+          <h2 className="lg:text-2xl text-xl font-Montserrat700 text-pink sm:text-left text-justify">
             Просто заполните имя и номер телефона
           </h2>
-          <p className="text-xl font-Raleway300">
-            Менеджер сам предложит варианты оформления <br /> и начинки тортика
+          <p className="lg:text-xl text-lg font-Raleway300 sm:text-left text-justify">
+            Менеджер сам предложит варианты оформления <br className="md:block hidden"/> и начинки тортика
             для вашего праздника
           </p>
-          <form action="" className="flex flex-col max-w-xs gap-5 mt-7">
+          <form action="" className="flex flex-col md:max-w-xs gap-5 mt-7 w-full">
             <input
               type="text"
               name="Name"
@@ -43,7 +43,7 @@ function Order() {
             <a href="#!"><img src={WhatsApp} alt="social-media-whatsapp" className="w-8 h-8" /></a>
           </div>
         </div>
-        <img src={Order_bg} alt="Order-img" />
+        <img src={Order_bg} alt="Order-img" className="w-[55%] md:block hidden" />
       </Content>
     </Wrapper>
   );
