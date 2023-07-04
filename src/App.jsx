@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { styled } from "styled-components";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 
+
 function App() {
+
   return (
     <Wrapper className="lg:px-0 px-4">
       <Navbar />
