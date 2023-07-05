@@ -84,12 +84,6 @@ function Accordion() {
 3 кг * 1600 руб. за 1 кг = 4800 руб.`,
           },
           {
-            subtitle: `Шаг 3. Выбрать опции`,
-            text: `Это может быть дополнительное количество ягод, безе, зефира, макарон, шоколадок, надпись на ленте или торте.`,
-          },
-          {
-            subtitle: `Шаг 4. Оплата и доставка`,
-            text: `Выберите удобный способ оплаты (наличные, банковская карта) и способ доставки: вы можете забрать свой заказ сами или заказать надежную доставку до квартиры или офиса за отдельную плату.`,
             text: `Доплата может быть только за оформление. в среднем 10-15% от стоимости торта.`,
           },
         ],
@@ -182,9 +176,7 @@ function Accordion() {
                     className="shadow-button shadow-red-300 rounded-full"
                   />
                 </Top>
-                <Bottom
-                  style={{ display: selectedItem == index ? "block" : "none" }}
-                >
+                <Bottom style={{ display: selectedItem == index ? "block" : "none" }}>
                   <BottomContent>
                     {item.description.map((descrData, idx) => {
                       return (

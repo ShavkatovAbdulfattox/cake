@@ -6,6 +6,11 @@ const reducer = (state, action) => {
         ...state,
         data: action.payload,
       };
+    case "ADD_CATEGORY":
+      return {
+        ...state,
+        category: action.payload,
+      };
     default:
       return state;
   }
