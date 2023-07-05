@@ -7,7 +7,7 @@ export default function WhatsAppBtn(props) {
   return (
     <motion.div whileTap={{scale:.9}} className="z-10 w-full">
       {" "}
-      <Button text={props.text} style={props.style} className="w-full">
+      <Button text={props.text} style={props.style} className="w-full" hover={props.hover}>
         <Link href="#">
           <Title text={props.text}>
             {props.text ? props.text : "Написать в"}
@@ -28,9 +28,15 @@ const Button = styled.div`
   overflow: hidden;
   cursor: pointer;
   padding: ${(props) => (props.text ? "5px" : "0")};
+  opacity: ${(props) => (props.hover ? "0.4" : "1")};
+  transition: 0.2s;
 
   @media screen and (max-width: 570px) {
     width: 100%;
+  }
+
+  &:hover{
+    opacity: 1;
   }
 `;
 
