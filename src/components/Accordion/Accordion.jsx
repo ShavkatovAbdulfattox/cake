@@ -150,7 +150,7 @@ function Accordion() {
     ],
   };
 
-  let [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState(null);
 
   const selected = (i) => {
     if (i == selectedItem) {
