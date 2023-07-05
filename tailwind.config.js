@@ -51,25 +51,25 @@ module.exports = {
       colors: {
         headingColor: "#2e2e2e",
         textColor: "#464646",
-        pink:"#D95C6A",
+        pink: "#D95C6A",
         primary: "#f5f3f3",
-
       },
       fontFamily: {
-        'Montserrat700': ['"Montserrat700"', 'serif'],
-        'Raleway300': ['"Raleway300"', 'serif'],
-        'Montserrat500': ['"Montserrat500"', 'serif'],
-        'Junegull': ['"Junegull"', 'serif'],
-        'Boorsok': ['"Boorsok"', 'serif'],
+        Montserrat700: ['"Montserrat700"', "serif"],
+        Raleway300: ['"Raleway300"', "serif"],
+        Montserrat500: ['"Montserrat500"', "serif"],
+        Junegull: ['"Junegull"', "serif"],
+        Boorsok: ['"Boorsok"', "serif"],
       },
       boxShadow: {
-        'button': '0px 4px 30px 0px',
-      },dropShadow: {
-        '3xl': '5px 45px 95px #fff',
-        '4xl': [
-            '0 35px 35px rgba(0, 0, 0, 0.25)',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
-        ]
+        button: "0px 4px 30px 0px",
+      },
+      dropShadow: {
+        "3xl": "5px 45px 95px #fff",
+        "4xl": [
+          "0 35px 35px rgba(0, 0, 0, 0.25)",
+          "0 45px 65px rgba(0, 0, 0, 0.15)",
+        ],
       },
 
       plugins: [],
