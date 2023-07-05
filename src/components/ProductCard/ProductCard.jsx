@@ -1,13 +1,15 @@
 import React from "react";
 import { styled } from "styled-components";
 
-import WhatsAppBtn from "../Btns/WhatsAppBtn";
+import Loader from "./Loader";
 
+import WhatsAppBtn from "../Btns/WhatsAppBtn";
 import basketIcon from "../../assets/icons/basket.svg";
 
 export default function ProductCard(props) {
   return (
     <Card>
+      <Loader />
       <Image src={props.img} />
       <Hr />
       <Title>{props.title}</Title>
@@ -32,6 +34,7 @@ const Card = styled.div`
   border-radius: 15px;
   background: #fff;
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.07);
+  position: relative;
 `;
 
 const Image = styled.img`
