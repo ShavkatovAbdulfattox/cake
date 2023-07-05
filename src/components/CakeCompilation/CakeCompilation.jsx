@@ -3,21 +3,29 @@ import styled from "styled-components";
 // import { div  } from "../../App";
 
 import WhatsAppBtn from "../Btns/WhatsAppBtn";
-import { Content, Title, Description, CardTitle, CardDesc } from "../Child/Child";
+import {
+  Content,
+  Title,
+  Description,
+  CardTitle,
+  CardDesc,
+} from "../Child/Child";
+
+
+
+
 import img from "../../assets/img/image123.png";
 import arrowSvg from "../../assets/icons/Arrow.svg";
-
+const data = {
+  title: `получите подборку тортов под ваше мероприятие`,
+  cardContent: [
+    {
+      title: `Расскажите о том, что вы хотите видеть`,
+      description: `Расскажите о том, что вы хотите видеть или под какое мероприятие подбираете тортик, а мы вышлем подборку подходях тортиков и осуществим задуманное.`,
+    },
+  ],
+};
 function CakeCompilation() {
-  const data = {
-    title: `получите подборку тортов под ваше мероприятие`,
-    cardContent: [
-      {
-        title: `Расскажите о том, что вы хотите видеть`,
-        description: `Расскажите о том, что вы хотите видеть или под какое мероприятие подбираете тортик, а мы вышлем подборку подходях тортиков и осуществим задуманное.`,
-      },
-    ],
-  };
-
   return (
     <section>
       <div className="container">
